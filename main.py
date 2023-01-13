@@ -13,5 +13,14 @@ def caser(direction, text,shift):
             end_text += alphabet[new_position]
         else:
             end_text += char
+    print(f"your {direction}d message is {end_text}")
+
+should_continue = True
+
+while should_continue:
+    direction = input("Type 'encode' to encrypt type 'decode' to decrypt: \n")
+    text = input("Type your message: \n").lower()
+    shift = int(input("Type the shift number: \n"))
+    shift = shift % 26
     
 print(logo)

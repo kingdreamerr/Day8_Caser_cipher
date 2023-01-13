@@ -7,6 +7,11 @@ def caser(direction, text,shift):
     if direction == "decode":
         shift *= -1
     for char in text:
-        position = alphabet.index(char)
-        new_position = alphabet[position + shift]
+        if char in alphabet:
+            position = alphabet.index(char)
+            new_position = alphabet[position + shift]
+            end_text += alphabet[new_position]
+        else:
+            end_text += char
+    
 print(logo)

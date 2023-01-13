@@ -27,7 +27,8 @@ caser(text="hello",shift=5)
 
 #### Preview:
 
-![caser cipher](./tip_calculator.png)
+![caser cipher](./caser2.png)
+
 
 ## How to run this on your device
 
